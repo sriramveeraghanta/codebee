@@ -1,0 +1,17 @@
+body{
+	background-color: lightblue;
+}
+h1{
+	font-size: 30px;
+	color: red;
+}
+p{
+	font-size: 20px;
+	color: blue;
+}
+ul{
+	list-style-type: square;
+}
+li{
+	color: white;
+}

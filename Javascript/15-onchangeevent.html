@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Events</title>
+</head>
+<body>
+
+<h1 id="heading"></h1>
+
+<input type="text" id="myinput" value="" onchange="displaytext()" />
+    
+<h1 id="heading2"></h1>
+    <select id="selcon" onchange="displayContry()">
+        <option>India</option>
+        <option>US</option>
+        <option>UK</option>
+        <option>AUS</option>
+        <option>UAE</option>
+    </select>
+
+<script type="text/javascript">
+function displaytext(){
+    var inputelem = document.getElementById('myinput');
+    var elem = document.getElementById('heading');
+    elem.innerHTML = inputelem.value;
+}
+function displayContry(){
+    var selcon = document.getElementById('selcon');
+    var heading2 = document.getElementById('heading2');
+    heading2.innerHTML = "Your current contry "+selcon.value;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<style type="text/css">
+		label{
+			font-weight: bolder;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="margin-bottom: 0px;">Form Elements</h1>
+	<hr>
+	<form style="width: 50%;padding: 20px;">
+		<div style="padding: 10px;">
+			<label style="display: block;">Username</label>
+			<input type="text" name="username" placeholder="Username" style="width: 100%" />
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block;">Email</label>
+			<input type="email" name="email" placeholder="email" style="width: 100%"/>
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block;">Password</label>
+			<input type="password" name="password" placeholder="Password" style="width: 100%">
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block;">Address</label>
+			<textarea rows="5" style="width: 100%"> Something is cool</textarea>
+		</div>
+		<div style="padding: 10px;">
+			<select name="contries" style="width: 100%">
+				<option value="null">___Select your Contry__</option>
+				<option value="india">INDIA</option>
+				<option value="US">US</option>
+				<option value="AUS">AUS</option>
+				<option value="UK">UK</option>
+			</select>	
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block;">Known Languages</label>
+			<input type="checkbox" value="english" /> English
+			<input type="checkbox" value="telugu" > Telugu
+			<input type="checkbox" value="hindi" > Hindi
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Gender</label>
+			<input type="radio" name="gender" value="male" /> Male
+			<input type="radio" name="gender" value="female" /> Female
+			<input type="radio" name="gender" value="other" /> Other
+
+			<label style="display: block">Marks</label>
+			<input type="radio" name="marks"> 90-100
+			<input type="radio" name="marks"> 80-90
+			<input type="radio" name="marks"> 70-80
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Percentage</label>
+			<input type="number" name="percentage" min="1" max="100" placeholder="enter percentage" style="width: 100%;" / >
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Month</label>
+			<input type="month" name="DOB" style="width: 100%;"/>
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Week</label>
+			<input type="week" name="week" style="width: 100%;"/>
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Date</label>
+			<input type="date" name="date" style="width: 100%;"/>
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Date Time</label>
+			<input type="datetime-local" name="date" style="width: 100%;"/>
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Mobile</label>
+			<input type="tel" name="mobile" style="width: 100%;"/>		
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Search</label>
+			<input type="search" name="search" style="width: 100%;"/>
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Range</label>
+			<input type="range" name="range" min="1" max="10" style="width: 100%;" />
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">URL</label>
+			<input type="url" name="url" placeholder="Enter url"  style="width: 100%;"/>
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block">Image Button</label>
+			<input type="image" src="http://www.pngmart.com/files/3/Submit-Button-PNG-Transparent-Image.png" alt="Submit" width="200px;">
+			<p>Note: Using Image as a button to submit</p>
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block;">File Picker</label>
+			<input type="file" name="file">
+		</div>
+		<div style="padding: 10px;">
+			<label style="display: block;">Color Picker</label>
+			<input type="color" name="favcolor">
+		</div>
+			
+		<div style="padding: 10px;">
+			<input type="submit" name="submit" value="submit" />
+			<input type="reset" name="rest" value="reset" />
+			<button type="button">button</button>
+		</div>
+		
+	</form>
+</body>
+</html>

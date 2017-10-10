@@ -1,0 +1,32 @@
+<html>
+<head>
+
+</head>
+<body>
+    <h1 id="title"></h1>
+    <h1 id="title2"></h1>
+   
+<script type="text/javascript">
+var a;
+hello();
+hello2("hello");
+var result = hello3(10,20);
+    console.log(result);
+
+function hello(){
+    var elem = document.getElementById("title");
+    elem.innerHTML = "this is form function hello";
+}
+
+function hello2(a){
+    var elem = document.getElementById("title2");
+    elem.innerHTML = "the value of a is "+a;
+}
+function hello3(a,b){
+    var c = a+b;
+    return c;
+}
+
+</script>
+</body>
+</html>

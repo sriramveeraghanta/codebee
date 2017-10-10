@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectors</title>
+	<style type="text/css">
+		/* low priority */
+		p{
+			color: red;
+		}
+		/* medium priority */
+		.green-text{
+			color: green;
+		}
+		#blue{
+			color: blue;
+			font-weight: bold;
+			font-style: italic;
+		}
+		/* high priority*/
+		#blue2{
+			color: blue;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="green-text" id="blue">title of the page</h1>
+	<p>some text</p>
+	<p id="blue">blue text 1</p>
+	<p id="blue2">blue text 2</p>
+	<p class="green-text">some text</p>
+	<p class="green-text">some text in green</p>
+</body>
+</html>

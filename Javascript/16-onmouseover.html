@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Mouse Over &amp; out</title>
+</head>
+<body>
+
+    <button class="button" id="button1" onmouseOver="button1()" onmouseout="defaultbutton()">button 1</button>
+    <button class="button" id="button2" onmouseOver="button2()" onmouseout="defaultbutton()">button 2</button>
+    <button class="button" id="button3" onmouseOver="button3()" onmouseout="defaultbutton()">button 3</button>
+    <button class="button" id="button4" onmouseOver="button4()" onmouseout="defaultbutton()">button 4</button>
+
+<script type="text/javascript">
+function button1(){
+    var elem = document.getElementById('button1');
+    elem.style.backgroundColor = "red";
+}
+function button2(){
+    var elem = document.getElementById('button2');
+    elem.style.backgroundColor = "blue";
+}
+function button3(){
+    var elem = document.getElementById('button3');
+    elem.style.backgroundColor = "green";
+}
+function button4(){
+    var elem = document.getElementById('button4');
+    elem.style.backgroundColor = "yellow";
+}
+function defaultbutton(){
+    var elem = document.getElementsByClassName('button');
+    //console.log(elem);
+    for(i in elem){
+        elem[i].style.backgroundColor = "white";
+    }
+}  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>Strings</title>
+    <style>
+        
+    </style>
+</head>
+<body >
+    
+    <h3>Uppercase</h3>
+    input: <span>hello world</span><br>
+    Output: <span id="up"></span>
+
+<script type="text/javascript">
+    var a = "what are you doing?";
+    var h = new String("hello");
+    console.log(typeof a);
+    console.log(typeof h);
+    a==h // true
+    a===h // false
+    
+    // length of string
+    console.log(a.length);
+    // iteration 
+    for(i in a){
+        console.log(a[i]);
+    }
+    
+    // indexof
+    var juk = "hello everyone, how are you doing? how is your day?";
+    var position = juk.indexOf("how");
+    console.log(position);
+    console.log(juk.lastIndexOf("how"));
+    
+    // search
+    var kim = "hello everyone, how are you doing? how is your day?"
+    console.log(kim.search("doing"));
+    
+    // slice
+    var str = "hello everyone, how are you doing? how is your day?"
+    var cutstr = str.slice(6,14);
+    console.log(cutstr);
+    var cutstr2 = str.slice(-4,-1);
+    console.log(cutstr2);
+    console.log(str.slice(3));
+    console.log(str.slice(-10));
+    
+    // Substring
+    console.log(str.substring(5,10));
+    // substr
+    console.log(str.substr(6,15));
+    
+    
+    // replace
+    var str4 = "Welcome sriram!"
+    var str5 = str4.replace("sriram", "KIET");
+    console.log(str5);
+    
+    // toUppercase
+    var str6 = "hello kiet";
+    var str7 = "HELLO KIET";
+    console.log(str6.toUpperCase());
+    console.log(str7.toLowerCase());
+    
+    // ConCat
+    var txt1 = "Hello";
+    var txt2 = "kiet";
+    var txt3 = txt1.concat("      ",txt2);
+    console.log(txt3);
+    
+    //CharAt()
+    
+    var jack = "hello world";
+    console.log(jack.charAt(8));
+    console.log(jack.charCodeAt(8));
+    
+    // String as Array
+    var hue = "Hello world"
+    console.log(hue[3]);
+    
+    //split
+    
+    var arr = "sriram,ravi,sam,john,cat,kiran,nikhith";
+    console.log(arr.split(",") );
+    var str8 = "hello world";
+    console.log(str8.split(" "));
+    
+    //trim
+    var str9 = "             hello           "
+    console.log(str9.trim());
+    
+    //rendering
+    document.getElementById('up').innerHTML = "hello world".toUpperCase();
+    
+</script>
+
+</body>
+</html>
