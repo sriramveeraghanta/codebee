@@ -1,0 +1,37 @@
+{
+  "name": "codebee",
+  "version": "0.0.2",
+  "description": "A Code Snippets Hive",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sriramveeraghanta/codebee.git"
+  },
+  "keywords": [
+    "Code"
+  ],
+  "author": "sriramveeraghanta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sriramveeraghanta/codebee/issues"
+  },
+  "homepage": "https://github.com/sriramveeraghanta/codebee#readme",
+  "dependencies": {
+    "next": "^10.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.6",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4"
+  }
+}
